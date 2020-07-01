@@ -1,9 +1,9 @@
 {
   "app-id": "org.gnome.design.BannerViewer",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.34",
+  "runtime-version": "3.36",
   "sdk": "org.gnome.Sdk",
-  "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-nightly"],
+  "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
   "command": "banner-viewer",
   "finish-args": [
     "--filesystem=home",
@@ -14,7 +14,7 @@
     "--share=network"
   ],
   "build-options": {
-    "append-path": "/usr/lib/sdk/rust-nightly/bin",
+    "append-path": "/usr/lib/sdk/rust-stable/bin",
     "env": {
       "RUSTFLAGS": "--remap-path-prefix =../",
       "CARGO_HOME": "/run/build/banner-viewer/cargo",
@@ -38,7 +38,7 @@
       "sources": [
         {
           "type": "git",
-          "url": "https://source.puri.sm/Librem5/libhandy.git",
+          "url": "https://gitlab.gnome.org/GNOME/libhandy.git",
           "tag": "v0.0.11",
           "commit": "f5909a897f70143bdd2f89f47a63c1bf848330ce"
         }
