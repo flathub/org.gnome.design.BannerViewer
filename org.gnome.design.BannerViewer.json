@@ -1,7 +1,7 @@
 {
   "app-id": "org.gnome.design.BannerViewer",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "40",
+  "runtime-version": "42",
   "sdk": "org.gnome.Sdk",
   "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
   "command": "banner-viewer",
@@ -38,8 +38,8 @@
         {
           "type": "git",
           "url": "https://gitlab.gnome.org/GNOME/libhandy.git",
-          "tag": "v0.0.11",
-          "commit": "f5909a897f70143bdd2f89f47a63c1bf848330ce"
+          "tag": "v0.0.13",
+          "commit": "7a193d7692c9c76a1a94f17c4d30b585f77d177c"
         }
       ]
     },
